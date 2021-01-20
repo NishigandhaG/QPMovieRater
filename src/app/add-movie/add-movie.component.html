@@ -1,0 +1,52 @@
+<div class="addMoviePage">
+    <div class="container">
+        <form [formGroup]="addMovie" novalidate (ngSubmit)="onClick(addMovie.value)">
+            <div class="form-group">
+                <label>
+                    <h2>Title:</h2>
+                    <input type="text" formControlName="title">
+                </label>
+            </div>
+            <div *ngIf="addMovie.controls['title'].invalid && (addMovie.controls['title'].dirty || addMovie.controls['title'].touched)" class="alert alert-danger">
+                Title is required.
+            </div>
+            <div class="form-group">
+                <label>
+                    <h2>Image URL:</h2>
+                    <input type="text" formControlName="img">
+                </label>
+            </div>
+            <div class="form-group">
+                <label>
+                    <h2>Release Date:</h2>
+                    <input type="date" formControlName="releaseDate">
+                </label>
+            </div>
+            <div *ngIf="addMovie.controls['releaseDate'].invalid && (addMovie.controls['releaseDate'].dirty || addMovie.controls['releaseDate'].touched)" class="alert alert-danger">
+                Release Date is required.
+            </div>
+            <div class="form-group">
+                <label>
+                    <h2>Description:</h2>
+                    <textarea formControlName="description"></textarea>
+                </label>
+            </div>
+            <div *ngIf="addMovie.controls['description'].invalid && (addMovie.controls['description'].dirty || addMovie.controls['description'].touched)" class="alert alert-danger">
+                Description is required.
+            </div>
+            <div class="form-group" style="display: none;">
+                <label>
+                    <h2>Rating:</h2>
+                    <input type="text" formControlName="rating">
+                </label>
+            </div>
+            <div class="form-group" style="display: none;">
+                <label>
+                    <h2>Comments:</h2>
+                    <input type="text" formControlName="comments">
+                </label>
+            </div>
+            <button type="submit" class="btn btn-light" [disabled]="!addMovie.valid">Add to the list</button>
+        </form>
+    </div>
+</div>

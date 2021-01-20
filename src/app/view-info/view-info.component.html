@@ -1,0 +1,61 @@
+<div class="viewDetailsPage">
+    <div class="container">
+        <div class="" *ngFor="let review of reviewList">
+            <h1>{{review.title}}</h1>
+            <div class="form-group">
+                <ngb-rating [formControl]="ctrl" style="font: none;"></ngb-rating>
+                <div class="form-text medium">
+                    <div *ngIf="ctrl.valid" class="text-success">Great!</div>
+                    <div *ngIf="ctrl.invalid" class="text-danger">How was the movie?</div>
+                </div>
+            </div>
+            <pre>Rating: <b>{{ ctrl.value }}</b></pre>
+            <button class="btn btn-sm btn-outline-primary mr-2" (click)="ctrl.setValue(null)">Clear</button>
+            <hr>
+
+            <div *ngIf="isShow" class="card">Comments:
+                <div>Name : {{addComment.name}}</div>
+                <div>Email ID : {{addComment.email}}</div>
+                <div>Comment : {{addComment.comment}}</div>
+            </div>
+
+            <div *ngIf="!isShow">No Comments Yet!</div>
+
+
+            <br>
+            <div class="card">
+                <form [formGroup]="addComment" novalidate>
+                    <div class="form-group">
+                        <label>
+                        <h4>Name:</h4>
+                        <input type="text" formControlName="name">
+                    </label>
+                    </div>
+                    <div *ngIf="addComment.controls['name'].invalid && (addComment.controls['name'].dirty || addComment.controls['name'].touched)" class="alert alert-danger">
+                        Name is required.
+                    </div>
+                    <div class="form-group">
+                        <label>
+                        <h4>Email ID:</h4>
+                        <input type="text" formControlName="email">
+                    </label>
+                    </div>
+                    <div *ngIf="addComment.controls['email'].invalid && (addComment.controls['email'].dirty || addComment.controls['email'].touched)" class="alert alert-danger">
+                        Email ID is required.
+                    </div>
+                    <div class="form-group">
+                        <label>
+                        <h4>Comment:</h4>
+                        <textarea formControlName="comment"  maxlength="150" onkeyup="countChar(this)" ></textarea>
+                        <span id="rchars">150</span>
+                    </label>
+                    </div>
+                    <div *ngIf="addComment.controls['comment'].invalid && (addComment.controls['comment'].dirty || addComment.controls['comment'].touched)" class="alert alert-danger">
+                        comment is required.
+                    </div>
+                    <button type="submit" class="btn btn-light" [disabled]="!addComment.valid" (click)="displayComments()">Post</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,42 @@
+.addMoviePage {
+    background-color: #595a56;
+}
+
+.container {
+    border-radius: 5px;
+    padding: 50px;
+}
+
+input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #d5d6ce;
+}
+
+label {
+    width: 100%;
+}
+
+textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #d5d6ce;
+}
+
+.alert {
+    width: 100%;
+}
+
+button {
+    align-self: center;
+}

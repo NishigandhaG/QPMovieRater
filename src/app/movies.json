@@ -1,0 +1,42 @@
+[{
+        "title": "3 Idiots",
+        "img": "https://upload.wikimedia.org/wikipedia/en/d/df/3_idiots_poster.jpg",
+        "releaseDate": "2020-01-07",
+        "description": "In college, Farhan and Raju form a great bond with Rancho due to his refreshing outlook. Years later, a bet gives them a chance to look for their long-lost friend whose existence seems rather elusive.",
+        "rating": "8",
+        "comments": [{ "name": "ABC", "email": "abc@gmail.com", "comment": "Good Movie" }]
+    },
+    {
+        "title": "Holiday",
+        "img": "https://i.pinimg.com/originals/ac/ee/1a/acee1ae81957cbf873b7271568720bd9.jpg",
+        "releaseDate": "2020-01-07",
+        "description": "Holiday: A Soldier Is Never Off Duty is a 2014 Indian Hindi-language action thriller film written and directed by A. R. Murugadoss, starring Akshay Kumar, Freddy Daruwala, Sumeet Raghavan and Sonakshi Sinha.",
+        "rating": "7",
+        "comments": [{ "name": "ABC", "email": "abc@gmail.com", "comment": "Good Movie" }]
+    },
+    {
+        "title": "Andhadhun",
+        "img": "https://upload.wikimedia.org/wikipedia/en/4/47/Andhadhun_poster.jpg",
+        "releaseDate": "2020-01-07",
+        "description": "Akash, a piano player pretending to be visually-impaired, unwittingly becomes entangled in a number of problems as he witnesses the murder of a former film actor.",
+        "rating": "9",
+        "comments": [{ "name": "ABC", "email": "abc@gmail.com", "comment": "Good Movie" }]
+    },
+    {
+        "title": "Dil Bechara",
+        "img": "https://cdn.123telugu.com/content/wp-content/uploads/2020/07/dil-bechara-m.jpg",
+        "releaseDate": "2020-01-07",
+        "description": "While struggling to survive, Manny and Kizie, who each have a terminal illness, fall in love with each other. Thereafter, the two try to spend the rest of their days being happy and staying positive.",
+        "rating": "7",
+        "comments": [{ "name": "ABC", "email": "abc@gmail.com", "comment": "Good Movie" }]
+    },
+    {
+        "title": "War",
+        "img": "https://upload.wikimedia.org/wikipedia/en/6/6f/War_official_poster.jpg",
+        "releaseDate": "2020-01-07",
+        "description": "Kabir, a secret agent, goes rogue after a mission to catch a terrorist goes awry. However, his boss sends Khalid, another agent and his student, to track him down",
+        "rating": "6",
+        "comments": [{ "name": "ABC", "email": "abc@gmail.com", "comment": "Good Movie" }]
+    }
+
+]

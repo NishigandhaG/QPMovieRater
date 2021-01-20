@@ -1,0 +1,17 @@
+<div class="movieListPage">
+    <div class="container">
+        <div class="row">
+            <div class="card col-md-3 my-4" *ngFor="let movie of moviesList">
+                <div class="card">
+                    <img class="card-img-top" src={{movie.img}} alt="Card image cap">
+                    <div class="card-body">
+                        <h1 class="card-title" id="cardTitle">{{movie.title}}</h1>
+                        <h2 class="card-rating"> Rating : {{movie.rating}}</h2>
+                        <p class="card-description">{{movie.description}}</p>
+                        <a class="btn btn-primary" (click)="sendMovie(movie.title)">View Movie Information</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

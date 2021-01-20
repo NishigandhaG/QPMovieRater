@@ -1,0 +1,14 @@
+.movieListPage {
+    background-color: #555353;
+}
+
+.card {
+    background-color: white;
+    margin: 10px;
+    padding: 0;
+    border: none;
+}
+
+.container {
+    width: fit-content;
+}
